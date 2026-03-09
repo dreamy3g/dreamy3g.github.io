@@ -1,0 +1,111 @@
+<!doctype html>
+<html lang="ko">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Signal Flow</title>
+    <style>
+      :root {
+        color-scheme: dark;
+        --bg: #09101f;
+        --panel: #0f1830;
+        --line: rgba(151, 168, 199, 0.18);
+        --text: #eef3ff;
+        --muted: #a7b4d1;
+        --accent-start: #2ce6ff;
+        --accent-end: #8d5cff;
+      }
+
+      * {
+        box-sizing: border-box;
+      }
+
+      body {
+        margin: 0;
+        min-height: 100vh;
+        font-family: -apple-system, BlinkMacSystemFont, "Apple SD Gothic Neo",
+          "Noto Sans KR", sans-serif;
+        background:
+          radial-gradient(circle at top, rgba(45, 91, 210, 0.22), transparent 42%),
+          linear-gradient(180deg, #050915 0%, var(--bg) 100%);
+        color: var(--text);
+      }
+
+      main {
+        width: min(760px, calc(100% - 32px));
+        margin: 0 auto;
+        padding: 56px 0 72px;
+      }
+
+      .card {
+        background: rgba(15, 24, 48, 0.84);
+        border: 1px solid var(--line);
+        border-radius: 28px;
+        padding: 28px;
+        backdrop-filter: blur(10px);
+        box-shadow: 0 20px 60px rgba(0, 0, 0, 0.28);
+      }
+
+      h1 {
+        margin: 0 0 12px;
+        font-size: clamp(2rem, 6vw, 3.4rem);
+        line-height: 1.02;
+        letter-spacing: -0.04em;
+      }
+
+      p {
+        margin: 0;
+        color: var(--muted);
+        line-height: 1.7;
+        font-size: 1rem;
+      }
+
+      .links {
+        display: flex;
+        flex-wrap: wrap;
+        gap: 12px;
+        margin-top: 24px;
+      }
+
+      a.button {
+        display: inline-flex;
+        align-items: center;
+        justify-content: center;
+        min-width: 164px;
+        padding: 14px 18px;
+        border-radius: 999px;
+        color: #07111f;
+        text-decoration: none;
+        font-weight: 700;
+        background: linear-gradient(135deg, var(--accent-start), var(--accent-end));
+      }
+
+      a.text-link {
+        color: var(--muted);
+        text-decoration: none;
+        padding: 14px 2px;
+      }
+
+      .meta {
+        margin-top: 18px;
+        font-size: 0.95rem;
+      }
+    </style>
+  </head>
+  <body>
+    <main>
+      <section class="card">
+        <h1>SIGNAL FLOW</h1>
+        <p>
+          감정 기록을 바탕으로 관계의 흐름을 차분하게 읽어주는 앱입니다.
+          오늘 입력, AI 리포트, 상대 반응 패턴 해석을 한곳에서 확인할 수 있습니다.
+        </p>
+        <div class="links">
+          <a class="button" href="./privacy.html">개인정보처리방침</a>
+          <a class="text-link" href="mailto:signalflow01@gmail.com">문의: signalflow01@gmail.com</a>
+        </div>
+        <p class="meta">Publisher: Playmi Studio</p>
+      </section>
+    </main>
+  </body>
+</html>
