@@ -1,0 +1,91 @@
+<!doctype html>
+<html lang="ko">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>두두의 동화나라</title>
+    <style>
+      :root {
+        --text: #f0f8e8;
+        --muted: #8ab87a;
+        --accent: #c8e6a0;
+        --orange: #f5a623;
+      }
+      * { box-sizing: border-box; }
+      body {
+        margin: 0;
+        background: linear-gradient(180deg, #1a4a2a 0%, #2a6a3a 60%, #3a8a4a 100%);
+        color: var(--text);
+        font: 16px/1.7 -apple-system, BlinkMacSystemFont, "Pretendard", "Apple SD Gothic Neo", "Noto Sans KR", sans-serif;
+        min-height: 100vh;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+      }
+      .wrap {
+        max-width: 480px;
+        width: 100%;
+        padding: 40px 20px 60px;
+        text-align: center;
+      }
+      .icon { font-size: 80px; margin-bottom: 12px; }
+      h1 {
+        margin: 0 0 6px;
+        font-size: 30px;
+        color: var(--accent);
+      }
+      .sub {
+        color: var(--muted);
+        font-size: 15px;
+        margin-bottom: 40px;
+      }
+      .links {
+        display: flex;
+        flex-direction: column;
+        gap: 12px;
+      }
+      .link-card {
+        background: rgba(20, 50, 15, 0.85);
+        border: 1px solid rgba(200, 230, 160, 0.2);
+        border-radius: 16px;
+        padding: 16px 20px;
+        text-decoration: none;
+        color: var(--accent);
+        font-size: 15px;
+        font-weight: 600;
+        transition: background 0.2s;
+      }
+      .link-card:hover {
+        background: rgba(40, 90, 25, 0.9);
+      }
+      .link-card .emoji { font-size: 20px; margin-right: 8px; }
+      .contact {
+        margin-top: 36px;
+        color: var(--muted);
+        font-size: 13px;
+      }
+      .contact a { color: var(--muted); }
+      .contact a:hover { color: var(--accent); }
+    </style>
+  </head>
+  <body>
+    <div class="wrap">
+      <div class="icon">🦉</div>
+      <h1>두두의 동화나라</h1>
+      <p class="sub">아이의 일상을 AI 동화로 만들어주는 앱</p>
+
+      <div class="links">
+        <a class="link-card" href="./privacy-policy.html">
+          <span class="emoji">🔐</span>개인정보처리방침 / Privacy Policy
+        </a>
+        <a class="link-card" href="./terms-of-service.html">
+          <span class="emoji">📋</span>이용약관 / Terms of Service
+        </a>
+      </div>
+
+      <div class="contact">
+        문의 · Contact: <a href="mailto:dodolearnplay@gmail.com">dodolearnplay@gmail.com</a>
+      </div>
+    </div>
+  </body>
+</html>
