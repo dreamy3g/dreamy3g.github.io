@@ -3,13 +3,6 @@
   "minSupportedVersion": "0.0.0",
   "storeUrlAndroid": "",
   "storeUrlIos": "",
-  "creditConfig": {
-    "initialCredits": 1,
-    "rewardAdCredits": 2,
-    "maxCredits": 99,
-    "maxRewardCountPerDay": 10,
-    "rewardCooldownSeconds": 60
-  },
   "notices": [
     {
       "id": "2026-04-14-welcome",
