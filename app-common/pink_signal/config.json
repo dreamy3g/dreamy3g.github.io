@@ -3,6 +3,13 @@
   "minSupportedVersion": "1.0.0",
   "storeUrlAndroid": "https://play.google.com/store/apps/details?id=com.dreamy2g.pink_signal",
   "storeUrlIos": "",
+  "creditConfig": {
+    "initialCredits": 10,
+    "rewardAdCredits": 3,
+    "maxCredits": 99,
+    "maxRewardCountPerDay": 10,
+    "rewardCooldownSeconds": 60
+  },
   "notices": [
     {
       "id": "2026-04-17-welcome",
