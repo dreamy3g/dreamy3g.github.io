@@ -1,7 +1,24 @@
 {
   "appKey": "pink_signal",
-  "minSupportedVersion": "1.0.1",
+  "minSupportedVersion": "1.0.0",
   "storeUrlAndroid": "https://play.google.com/store/apps/details?id=com.dreamy2g.pink_signal",
   "storeUrlIos": "",
-  "notices": []
+  "notices": [
+    {
+      "id": "2026-04-17-welcome",
+      "title": {
+        "ko": "💗 두근두근 업데이트 안내"
+      },
+      "body": {
+        "ko": "안녕하세요! 두근두근 AI 연애 분석 상담사예요.\\n\\n이번 업데이트에서 **공유 기능**과 **레벨 시스템**이 추가됐어요.\\n\\n[icon:favorite] 상담 결과를 친구에게 공유해보세요!"
+      },
+      "linkLabel": {
+        "ko": "자세히 보기"
+      },
+      "url": "https://dreamy3g.github.io/signal-flow/",
+      "date": "2026-04-17",
+      "important": true,
+      "popup": true
+    }
+  ]
 }
