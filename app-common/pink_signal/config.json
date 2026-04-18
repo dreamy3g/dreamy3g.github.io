@@ -10,5 +10,7 @@
     "maxRewardCountPerDay": 10,
     "rewardCooldownSeconds": 60
   },
-  "notices": []
+  "notices": [],
+  "iapBonusEnabled": true,
+  "iapBonusAmount": 20
 }
