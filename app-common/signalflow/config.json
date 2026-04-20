@@ -1,6 +1,6 @@
 {
   "appKey": "signalflow",
-  "minSupportedVersion": "1.1.2",
+  "minSupportedVersion": "1.1.1",
   "storeUrlAndroid": "https://example.com/update",
   "storeUrlIos": "https://example.com/update",
   "creditConfig": {
