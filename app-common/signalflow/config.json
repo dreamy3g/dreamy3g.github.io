@@ -1,0 +1,14 @@
+{
+  "appKey": "signalflow",
+  "minSupportedVersion": "1.1.2",
+  "storeUrlAndroid": "https://example.com/update",
+  "storeUrlIos": "https://example.com/update",
+  "creditConfig": {
+    "initialCredits": 3,
+    "rewardAdCredits": 3,
+    "maxCredits": 99,
+    "maxRewardCountPerDay": 10,
+    "rewardCooldownSeconds": 60
+  },
+  "notices": []
+}
