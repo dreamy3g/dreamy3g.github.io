@@ -48,7 +48,7 @@
             <li><strong>상담 및 답장 입력 내용</strong>: AI 분석과 답장 생성을 위해 서버 기능 및 OpenAI API로 전송될 수 있습니다.</li>
             <li><strong>상담 기록, 답장 기록, 앱 설정, 테마, 백업 파일</strong>: 기본적으로 사용자 기기에 저장됩니다. 사용자가 내보내기/가져오기를 실행하면 해당 백업 파일은 사용자가 직접 보관합니다.</li>
             <li><strong>OCR 관련 정보</strong>: 답장 도우미의 이미지 인식은 기기에서 텍스트를 추출하기 위해 사용됩니다. 추출된 대화 내용은 사용자가 답장 생성을 요청할 때 AI 처리에 사용될 수 있습니다.</li>
-            <li><strong>기기 단위 운영 정보</strong>: 구매코드, 크레딧(하트) 상태, 최초 실행/보너스 지급 여부, 시작하기 미션 상태, 광고 보상 기록, 광고 쿨타임 및 일일 제한 상태가 서버에 저장될 수 있습니다.</li>
+            <li><strong>기기 단위 운영 정보</strong>: 구매코드, 크레딧(하트) 상태, 레벨 및 누적 레벨 포인트, 최초 실행/보너스 지급 여부, 시작하기 미션 상태, 광고 보상 기록 및 일일 보상 횟수 정보가 서버에 저장될 수 있습니다.</li>
             <li><strong>광고 및 동의 정보</strong>: Google Mobile Ads SDK 및 UMP(User Messaging Platform)를 통해 광고 제공, 광고 동의, 광고 측정에 필요한 정보가 처리될 수 있습니다.</li>
             <li><strong>앱 사용 분석 정보</strong>: Firebase Analytics를 통해 화면 조회, 버튼 클릭, 기능 사용 여부 등 앱 개선을 위한 이벤트가 수집될 수 있습니다. 상담 내용, 이름, OCR 원문 등 사용자가 입력한 민감한 본문은 분석 이벤트로 보내지 않도록 설계합니다.</li>
             <li><strong>운세/궁합 콘텐츠 다운로드 정보</strong>: Firebase Storage에서 오늘의 운세 및 궁합 콘텐츠를 내려받을 수 있습니다.</li>
@@ -58,13 +58,13 @@
           <ul>
             <li>AI 연애 상담, 답장 추천, 운세/궁합 콘텐츠 제공</li>
             <li>상담 기록 표시, 공유, 백업/복구 기능 제공</li>
-            <li>크레딧(하트), 보상형 광고, 쿨타임, 일일 제한 운영</li>
+            <li>크레딧(하트), 보상형 광고, 일일 제한 운영, 레벨 및 진행 상태 복구</li>
             <li>앱 안정성, 기능 사용 현황, 서비스 품질 개선</li>
             <li>부정 이용 방지 및 고객 문의 대응</li>
           </ul>
 
           <h3>4. 보관 및 삭제</h3>
-          <p>상담 기록과 답장 기록은 기본적으로 사용자 기기에 저장되며, 앱 삭제 또는 앱 내 기록 삭제 기능으로 삭제할 수 있습니다. 서버에 저장되는 기기 단위 운영 정보는 크레딧, 광고 보상, 구매코드, 보너스 지급 상태를 관리하기 위해 보관됩니다. 사용자는 개인정보 또는 기기 단위 데이터 삭제 관련 문의를 이메일로 요청할 수 있습니다.</p>
+          <p>상담 기록과 답장 기록은 기본적으로 사용자 기기에 저장되며, 앱 삭제 또는 앱 내 기록 삭제 기능으로 삭제할 수 있습니다. 서버에 저장되는 기기 단위 운영 정보는 크레딧, 광고 보상 기록, 일일 보상 횟수, 구매코드, 레벨 및 진행 상태를 관리하고 일부 상태 복구를 지원하기 위해 보관됩니다. 사용자는 개인정보 또는 기기 단위 데이터 삭제 관련 문의를 이메일로 요청할 수 있습니다.</p>
           <p class="note">앱 삭제 시 기기에 저장된 기록과 설정은 사라질 수 있으며, 사용자가 직접 만든 백업 파일은 사용자가 관리해야 합니다.</p>
 
           <h3>5. 제3자 서비스</h3>
@@ -97,7 +97,7 @@
             <li><strong>Consultation and reply input</strong>: May be sent to server functions and the OpenAI API to generate AI analysis or replies.</li>
             <li><strong>Consultation history, reply history, settings, themes, and backup files</strong>: Stored primarily on the user’s device. Exported backup files are managed by the user.</li>
             <li><strong>OCR-related information</strong>: Images used in the reply helper may be processed on device to extract text. Extracted conversation text may be used for AI processing when the user requests a reply.</li>
-            <li><strong>Device-level operational data</strong>: Purchase code, credit status, first-launch/bonus status, starter task status, ad reward logs, cooldowns, and daily reward limits may be stored on our server.</li>
+            <li><strong>Device-level operational data</strong>: Purchase code, credit status, level and total level points, first-launch/bonus status, starter task status, ad reward logs, and daily reward count information may be stored on our server.</li>
             <li><strong>Ads and consent data</strong>: Google Mobile Ads SDK and UMP may process information needed for ad delivery, consent, and measurement.</li>
             <li><strong>Analytics data</strong>: Firebase Analytics may collect events such as screen views, button taps, and feature usage to improve the App. We design analytics events not to include raw consultation text, names, OCR text, or other sensitive user-entered content.</li>
             <li><strong>Fortune/compatibility content download data</strong>: The App may download daily fortune and compatibility content from Firebase Storage.</li>
@@ -107,13 +107,13 @@
           <ul>
             <li>Providing AI relationship analysis, reply suggestions, fortune, and compatibility content</li>
             <li>Displaying, sharing, exporting, and importing consultation records</li>
-            <li>Operating credits, rewarded ads, cooldowns, and daily limits</li>
+            <li>Operating credits, rewarded ads, daily limits, and restoring level or progress state</li>
             <li>Improving app stability, feature usage, and service quality</li>
             <li>Preventing abuse and responding to support inquiries</li>
           </ul>
 
           <h3>4. Retention and Deletion</h3>
-          <p>Consultation and reply records are stored primarily on the user’s device and can be deleted by deleting the App or using in-app record deletion features. Device-level operational data stored on our server is retained to manage credits, rewarded ads, purchase codes, and bonus status. Users may request deletion of personal or device-level data by contacting us by email.</p>
+          <p>Consultation and reply records are stored primarily on the user’s device and can be deleted by deleting the App or using in-app record deletion features. Device-level operational data stored on our server is retained to manage credits, ad reward logs, daily reward count, purchase codes, level, and progress restoration support. Users may request deletion of personal or device-level data by contacting us by email.</p>
           <p class="note">If the App is deleted, locally stored records and settings may be lost. Exported backup files are managed by the user.</p>
 
           <h3>5. Third-Party Services</h3>
