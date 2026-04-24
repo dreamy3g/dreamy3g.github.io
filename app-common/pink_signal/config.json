@@ -5,7 +5,7 @@
   "storeUrlIos": "",
   "creditConfig": {
     "initialCredits": 10,
-    "rewardAdCredits": 5,
+    "rewardAdCredits": 3,
     "maxCredits": 99,
     "maxRewardCountPerDay": 10,
     "rewardCooldownSeconds": 60
