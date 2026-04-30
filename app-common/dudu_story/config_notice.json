@@ -4,11 +4,10 @@
   "storeUrlAndroid": "",
   "storeUrlIos": "",
   "creditConfig": {
-    "initialCredits": 1,
-    "rewardAdCredits": 2,
     "maxCredits": 99,
     "maxRewardCountPerDay": 10,
-    "rewardCooldownSeconds": 60
+    "rewardCooldownSeconds": 60,
+    "rewardAdCredits": 2
   },
   "notices": [
     {
