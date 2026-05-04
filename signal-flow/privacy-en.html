@@ -1,0 +1,162 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Signal Flow Privacy Policy</title>
+    <style>
+      :root {
+        color-scheme: dark;
+        --bg: #09101f;
+        --panel: #0f1830;
+        --line: rgba(151, 168, 199, 0.18);
+        --text: #eef3ff;
+        --muted: #a7b4d1;
+      }
+
+      * {
+        box-sizing: border-box;
+      }
+
+      body {
+        margin: 0;
+        font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
+        background:
+          radial-gradient(circle at top, rgba(45, 91, 210, 0.22), transparent 42%),
+          linear-gradient(180deg, #050915 0%, var(--bg) 100%);
+        color: var(--text);
+      }
+
+      main {
+        width: min(860px, calc(100% - 32px));
+        margin: 0 auto;
+        padding: 36px 0 72px;
+      }
+
+      .card {
+        background: rgba(15, 24, 48, 0.84);
+        border: 1px solid var(--line);
+        border-radius: 28px;
+        padding: 28px;
+        backdrop-filter: blur(10px);
+        box-shadow: 0 20px 60px rgba(0, 0, 0, 0.28);
+      }
+
+      h1, h2 {
+        margin: 0 0 12px;
+        letter-spacing: -0.03em;
+      }
+
+      h1 {
+        font-size: clamp(1.9rem, 6vw, 3rem);
+      }
+
+      h2 {
+        margin-top: 26px;
+        font-size: 1.15rem;
+      }
+
+      p, li {
+        color: var(--muted);
+        line-height: 1.75;
+        font-size: 0.98rem;
+      }
+
+      ul {
+        padding-left: 18px;
+        margin: 8px 0 0;
+      }
+
+      .top-note {
+        margin-bottom: 18px;
+      }
+
+      a {
+        color: #dbe6ff;
+      }
+    </style>
+  </head>
+  <body>
+    <main>
+      <section class="card">
+        <h1>Signal Flow Privacy Policy</h1>
+        <p class="top-note">Last updated: April 16, 2026</p>
+
+        <h2>1. Information We Collect</h2>
+        <p>
+          Signal Flow stores some information that you enter or that is generated while you use the app
+          in local storage on your device.
+        </p>
+        <ul>
+          <li>Daily entries: conversation count, reply time, initiated count, and mood score</li>
+          <li>Onboarding survey responses and daily survey responses</li>
+          <li>Daily analysis results such as today\'s coach, relationship flow interpretation, and response-flow insights</li>
+          <li>AI report results and related metadata</li>
+          <li>App settings such as theme, reminder time, and usage-tip status</li>
+          <li>Reward-credit status, starter bonus status, and device-identifier-based reward state</li>
+        </ul>
+
+        <h2>2. How We Use Information</h2>
+        <ul>
+          <li>To analyze and display relationship-flow patterns</li>
+          <li>To generate 3-day, 7-day, and 30-day AI reports</li>
+          <li>To schedule input reminders and maintain user settings</li>
+          <li>To support data backup and restore features</li>
+          <li>To review usage statistics for app quality improvement</li>
+        </ul>
+
+        <h2>3. Third-Party Services</h2>
+        <p>The app may use the following external services.</p>
+        <ul>
+          <li>Firebase Analytics: collects app usage statistics such as onboarding, entry saves, and report generation</li>
+          <li>Firebase Functions: processes AI report generation requests and reward-state checks</li>
+          <li>OpenAI API: generates AI reports based on your entries and survey responses</li>
+          <li>Google AdMob: provides ads, measures ad performance, and handles ad-related diagnostics and identifiers</li>
+        </ul>
+
+        <h2>4. Storage and Transmission</h2>
+        <p>
+          Entries, survey responses, daily analysis results, report results, and settings are primarily stored
+          on your device. When generating an AI report, information needed for report generation, such as
+          entry summaries, survey responses, and relationship type, may be sent to the OpenAI API through
+          Firebase Functions. Some usage statistics may be sent to Firebase Analytics. For ad delivery and
+          measurement, advertising identifiers or device-related information may be processed by AdMob and
+          related third-party services.
+        </p>
+
+        <h2>5. Backup and Restore</h2>
+        <p>
+          You can use the export/import features in the app to back up or restore entries, surveys, daily
+          analysis results, reports, and settings as an external JSON file. Signal Flow does not store your
+          records in a server-side user account, so we recommend backing up your data before changing devices
+          or deleting the app. Some reward-related data, such as ad credits, ad reward status, and starter
+          bonus status, may not be included in backup/restore or may be handled separately based on device
+          identifier information.
+        </p>
+
+        <h2>6. Your Choices</h2>
+        <p>
+          You can delete locally stored data at any time using the Reset All Data feature in the app.
+          Input reminders can be turned on or off directly in Settings.
+        </p>
+
+        <h2>7. Ads and Reward Credits</h2>
+        <p>
+          Signal Flow may provide Google AdMob rewarded ads. If you choose to watch an ad, you may receive
+          in-app AI credits that can be used to generate 3-day, 7-day, and 30-day AI reports.
+        </p>
+        <ul>
+          <li>Watching ads is optional and initiated by the user.</li>
+          <li>The ad reward structure and required credits may change as the service is operated.</li>
+          <li>AdMob and related partner policies may apply during ad delivery and measurement.</li>
+        </ul>
+
+        <h2>8. Contact</h2>
+        <p>
+          For privacy or service-related inquiries:
+          <a href="mailto:signalflow01@gmail.com">signalflow01@gmail.com</a>
+        </p>
+      </section>
+    </main>
+  </body>
+</html>
