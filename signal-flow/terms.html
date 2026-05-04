@@ -3,7 +3,7 @@
   <head>
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
-    <title>Signal Flow 이용약관</title>
+    <title>Signal Flow Terms of Use</title>
     <style>
       :root {
         color-scheme: dark;
@@ -20,8 +20,8 @@
 
       body {
         margin: 0;
-        font-family: -apple-system, BlinkMacSystemFont, "Apple SD Gothic Neo",
-          "Noto Sans KR", sans-serif;
+        font-family: -apple-system, BlinkMacSystemFont, "Segoe UI",
+          "Apple SD Gothic Neo", "Noto Sans KR", sans-serif;
         background:
           radial-gradient(circle at top, rgba(45, 91, 210, 0.22), transparent 42%),
           linear-gradient(180deg, #050915 0%, var(--bg) 100%);
@@ -43,7 +43,8 @@
         box-shadow: 0 20px 60px rgba(0, 0, 0, 0.28);
       }
 
-      h1, h2 {
+      h1,
+      h2 {
         margin: 0 0 12px;
         letter-spacing: -0.03em;
       }
@@ -57,7 +58,8 @@
         font-size: 1.15rem;
       }
 
-      p, li {
+      p,
+      li {
         color: var(--muted);
         line-height: 1.75;
         font-size: 0.98rem;
@@ -75,11 +77,27 @@
       a {
         color: #dbe6ff;
       }
+
+      [data-lang] {
+        display: none;
+      }
+
+      html[lang="ko"] [data-lang="ko"],
+      html[lang="en"] [data-lang="en"] {
+        display: block;
+      }
     </style>
+    <script>
+      const params = new URLSearchParams(window.location.search);
+      const lang = params.get("lang") === "en" ? "en" : "ko";
+      document.documentElement.lang = lang;
+      document.title =
+        lang === "en" ? "Signal Flow Terms of Use" : "Signal Flow 이용약관";
+    </script>
   </head>
   <body>
     <main>
-      <section class="card">
+      <section class="card" data-lang="ko">
         <h1>Signal Flow 이용약관</h1>
         <p class="top-note">최종 업데이트: 2026-04-16</p>
 
@@ -129,6 +147,63 @@
         <h2>6. 문의처</h2>
         <p>
           서비스 및 정책 관련 문의:
+          <a href="mailto:signalflow01@gmail.com">signalflow01@gmail.com</a>
+        </p>
+      </section>
+
+      <section class="card" data-lang="en">
+        <h1>Signal Flow Terms of Use</h1>
+        <p class="top-note">Last updated: April 16, 2026</p>
+
+        <h2>1. Service Overview</h2>
+        <p>
+          Signal Flow is an app that provides relationship flow interpretation,
+          response flow insights, and AI reports based on records entered by the
+          user. Service content and screen design may change through updates.
+        </p>
+
+        <h2>2. Reference Information</h2>
+        <p>
+          Relationship flow interpretation, response flow insights, today's
+          coach, and AI reports provided by the app are for reference only. They
+          do not guarantee or determine the other person's actual intent,
+          feelings, or the outcome of a relationship.
+        </p>
+        <p>
+          AI reports and insights are generated using generative AI models and
+          may contain inaccurate or unexpected expressions. Information provided
+          by the app is for reference only, and final judgment and decisions
+          about relationships are the user's own responsibility.
+        </p>
+
+        <h2>3. Ads and Credits</h2>
+        <p>
+          The app may grant AI credits through ad viewing, and these credits may
+          be used to generate AI reports.
+        </p>
+        <ul>
+          <li>Watching ads is optional and chosen by the user.</li>
+          <li>The credits required for report generation and the ad reward structure may change.</li>
+          <li>Attempts to obtain rewards through abnormal methods may be restricted.</li>
+        </ul>
+
+        <h2>4. Data Storage and Backup</h2>
+        <p>
+          Signal Flow does not store user records in its own server account.
+          Users can back up their data directly through the in-app export
+          feature, and are encouraged to do so before changing devices or
+          deleting the app.
+        </p>
+
+        <h2>5. Service Changes and Restrictions</h2>
+        <p>
+          App features, AI report structure, ad rewards, and credit policies may
+          change or be partially restricted as needed for service operations.
+        </p>
+
+        <h2>6. Contact</h2>
+        <p>
+          For service or policy-related inquiries:
           <a href="mailto:signalflow01@gmail.com">signalflow01@gmail.com</a>
         </p>
       </section>

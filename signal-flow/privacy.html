@@ -3,7 +3,7 @@
   <head>
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
-    <title>Signal Flow 개인정보처리방침</title>
+    <title>Signal Flow Privacy Policy</title>
     <style>
       :root {
         color-scheme: dark;
@@ -20,8 +20,8 @@
 
       body {
         margin: 0;
-        font-family: -apple-system, BlinkMacSystemFont, "Apple SD Gothic Neo",
-          "Noto Sans KR", sans-serif;
+        font-family: -apple-system, BlinkMacSystemFont, "Segoe UI",
+          "Apple SD Gothic Neo", "Noto Sans KR", sans-serif;
         background:
           radial-gradient(circle at top, rgba(45, 91, 210, 0.22), transparent 42%),
           linear-gradient(180deg, #050915 0%, var(--bg) 100%);
@@ -43,7 +43,8 @@
         box-shadow: 0 20px 60px rgba(0, 0, 0, 0.28);
       }
 
-      h1, h2 {
+      h1,
+      h2 {
         margin: 0 0 12px;
         letter-spacing: -0.03em;
       }
@@ -57,7 +58,8 @@
         font-size: 1.15rem;
       }
 
-      p, li {
+      p,
+      li {
         color: var(--muted);
         line-height: 1.75;
         font-size: 0.98rem;
@@ -75,11 +77,29 @@
       a {
         color: #dbe6ff;
       }
+
+      [data-lang] {
+        display: none;
+      }
+
+      html[lang="ko"] [data-lang="ko"],
+      html[lang="en"] [data-lang="en"] {
+        display: block;
+      }
     </style>
+    <script>
+      const params = new URLSearchParams(window.location.search);
+      const lang = params.get("lang") === "en" ? "en" : "ko";
+      document.documentElement.lang = lang;
+      document.title =
+        lang === "en"
+          ? "Signal Flow Privacy Policy"
+          : "Signal Flow 개인정보처리방침";
+    </script>
   </head>
   <body>
     <main>
-      <section class="card">
+      <section class="card" data-lang="ko">
         <h1>Signal Flow 개인정보처리방침</h1>
         <p class="top-note">최종 업데이트: 2026-04-16</p>
 
@@ -156,6 +176,92 @@
         <h2>8. 문의처</h2>
         <p>
           개인정보 및 서비스 관련 문의:
+          <a href="mailto:signalflow01@gmail.com">signalflow01@gmail.com</a>
+        </p>
+      </section>
+
+      <section class="card" data-lang="en">
+        <h1>Signal Flow Privacy Policy</h1>
+        <p class="top-note">Last updated: April 16, 2026</p>
+
+        <h2>1. Information We Collect</h2>
+        <p>
+          Signal Flow stores some information entered by the user or generated
+          while using the app in local storage on the device.
+        </p>
+        <ul>
+          <li>Daily entries: number of conversations, reply time, initiated count, and mood score</li>
+          <li>Onboarding survey and daily survey responses</li>
+          <li>Daily analysis results such as today's coach, relationship flow interpretation, and response flow insight</li>
+          <li>AI report results and related metadata</li>
+          <li>App settings such as theme, notification time, and usage tip status</li>
+          <li>Reward credit, starter bonus status, and device-based reward status information</li>
+        </ul>
+
+        <h2>2. How We Use Information</h2>
+        <ul>
+          <li>To analyze and display relationship flow</li>
+          <li>To generate 3-day, 7-day, and 30-day AI reports</li>
+          <li>To schedule entry reminders and keep user settings</li>
+          <li>To support backup and restore features</li>
+          <li>To review usage statistics for app quality improvement</li>
+        </ul>
+
+        <h2>3. Third-Party Services</h2>
+        <p>The app may use the following external services.</p>
+        <ul>
+          <li>Firebase Analytics: collects usage statistics related to onboarding, entry saving, report generation, and similar app events</li>
+          <li>Firebase Functions: processes AI report requests and reward status checks</li>
+          <li>OpenAI API: generates AI reports based on user entries and survey responses</li>
+          <li>Google AdMob: provides ads, measures ad performance, and handles ad-related diagnostics and identifiers</li>
+        </ul>
+
+        <h2>4. Storage and Transfer</h2>
+        <p>
+          User entries, survey responses, daily analysis results, report results,
+          and settings are primarily stored in local storage on the device. When
+          generating an AI report, information needed for report generation, such
+          as summarized entry data, survey responses, and relationship type, may
+          be sent to the OpenAI API through Firebase Functions. Some usage
+          statistics may be sent to Firebase Analytics. Advertising identifiers
+          or device-related information may be processed by AdMob or related
+          third-party services for ad delivery and measurement.
+        </p>
+
+        <h2>5. Backup and Restore</h2>
+        <p>
+          Users can back up or restore entries, surveys, daily analysis results,
+          reports, and settings as an external JSON file using the export/import
+          features in the app. Signal Flow does not store user records in its own
+          server account, so users are encouraged to back up their data before
+          changing devices or deleting the app. Some reward-related information,
+          such as ad credits, ad reward status, and starter bonus status, may not
+          be included in backup/restore or may be handled separately based on
+          device identifiers.
+        </p>
+
+        <h2>6. User Choices</h2>
+        <p>
+          Users can delete locally stored data at any time through the Reset All
+          Data feature in the app. Entry reminders can be turned on or off
+          directly in settings.
+        </p>
+
+        <h2>7. Ads and Reward Credits</h2>
+        <p>
+          Signal Flow may provide Google AdMob rewarded ads. When a user watches
+          an ad, in-app AI credits may be granted, and these credits may be used
+          to generate 3-day, 7-day, or 30-day AI reports.
+        </p>
+        <ul>
+          <li>Watching ads is optional and chosen by the user.</li>
+          <li>The reward structure and required credits may change depending on service operations.</li>
+          <li>AdMob and related partner policies may apply during ad delivery and measurement.</li>
+        </ul>
+
+        <h2>8. Contact</h2>
+        <p>
+          For privacy or service-related inquiries:
           <a href="mailto:signalflow01@gmail.com">signalflow01@gmail.com</a>
         </p>
       </section>
