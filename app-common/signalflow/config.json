@@ -1,12 +1,12 @@
 {
   "appKey": "signalflow",
-  "minSupportedVersion": "1.1.1",
-  "storeUrlAndroid": "https://example.com/update",
-  "storeUrlIos": "https://example.com/update",
+  "minSupportedVersion": "1.1.3",
+  "storeUrlAndroid": "https://play.google.com/store/apps/details?id=com.dreamy2g.signalflow",
+  "storeUrlIos": "https://apps.apple.com/app/id6762330348",
   "creditConfig": {
-    "initialCredits": 3,
-    "rewardAdCredits": 3,
-    "maxCredits": 99,
+    "initialCredits": 2,
+    "rewardAdCredits": 2,
+    "maxCredits": 100,
     "maxRewardCountPerDay": 10,
     "rewardCooldownSeconds": 60
   },
