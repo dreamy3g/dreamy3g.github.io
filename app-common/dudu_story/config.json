@@ -8,6 +8,6 @@
     "maxCredits": 99,
     "maxRewardCountPerDay": 10,
     "rewardCooldownSeconds": 60,
-    "rewardAdCredits": 3
+    "rewardAdCredits": 5
   }
 }
