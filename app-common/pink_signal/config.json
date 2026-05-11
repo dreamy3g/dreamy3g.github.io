@@ -4,7 +4,6 @@
   "storeUrlAndroid": "https://play.google.com/store/apps/details?id=com.dreamy2g.pinksignal",
   "storeUrlIos": "https://apps.apple.com/app/id6762330348",
   "creditConfig": {
-    "rewardAdBonus": 5,
     "maxCredits": 9999,
     "maxRewardCountPerDay": 20,
     "rewardCooldownSeconds": 60
