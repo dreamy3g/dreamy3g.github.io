@@ -1,0 +1,67 @@
+<!doctype html>
+<html lang="ko">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>두근두근 다운로드</title>
+    <script>
+      const iosUrl = "https://apps.apple.com/app/id6767147867";
+      const androidUrl = "https://play.google.com/store/apps/details?id=com.dreamy2g.pinksignal";
+      const ua = navigator.userAgent || navigator.vendor || "";
+
+      if (/android/i.test(ua)) {
+        window.location.replace(androidUrl);
+      } else if (/iPad|iPhone|iPod/.test(ua) || (navigator.platform === "MacIntel" && navigator.maxTouchPoints > 1)) {
+        window.location.replace(iosUrl);
+      }
+    </script>
+    <style>
+      :root { --accent: #f472b6; --purple: #a78bfa; --text: #f3f4f6; --muted: #9ca3af; }
+      * { box-sizing: border-box; }
+      body {
+        margin: 0;
+        background: linear-gradient(180deg, #1a0f2e 0%, #0f0a1a 100%);
+        color: var(--text);
+        font: 16px/1.7 -apple-system, BlinkMacSystemFont, "Pretendard", "Apple SD Gothic Neo", "Noto Sans KR", sans-serif;
+        min-height: 100vh;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+      }
+      .card {
+        background: rgba(26, 15, 46, 0.88);
+        border: 1px solid rgba(244, 114, 182, 0.2);
+        border-radius: 20px;
+        padding: 40px 32px;
+        text-align: center;
+        max-width: 400px;
+        width: 90%;
+      }
+      h1 { margin: 12px 0 6px; font-size: 28px; color: var(--accent); }
+      p { color: var(--muted); font-size: 14px; margin: 0 0 28px; }
+      .links { display: flex; flex-direction: column; gap: 12px; }
+      a.btn {
+        display: block;
+        padding: 14px;
+        border-radius: 14px;
+        border: 1px solid rgba(244, 114, 182, 0.3);
+        color: var(--text);
+        text-decoration: none;
+        font-size: 15px;
+        background: rgba(244, 114, 182, 0.07);
+      }
+      a.btn:hover { background: rgba(244, 114, 182, 0.15); }
+    </style>
+  </head>
+  <body>
+    <div class="card">
+      <div style="font-size:48px">💗</div>
+      <h1>두근두근</h1>
+      <p>사용 중인 기기에 맞는 스토어로 이동합니다.</p>
+      <div class="links">
+        <a class="btn" href="https://apps.apple.com/app/id6767147867">App Store</a>
+        <a class="btn" href="https://play.google.com/store/apps/details?id=com.dreamy2g.pinksignal">Google Play</a>
+      </div>
+    </div>
+  </body>
+</html>
