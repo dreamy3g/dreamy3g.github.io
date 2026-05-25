@@ -1,0 +1,40 @@
+<!doctype html>
+<html lang="ko">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>대박!</title>
+    <style>
+      :root { --text:#f8fafc; --muted:#a1a1aa; --accent:#ff6b9d; --purple:#a78bfa; --surface:#12121e; }
+      * { box-sizing:border-box; }
+      body { margin:0; background:linear-gradient(180deg,#080810 0%,#12121e 58%,#1a1020 100%); color:var(--text); font:16px/1.7 -apple-system,BlinkMacSystemFont,"Pretendard","Apple SD Gothic Neo","Noto Sans KR",sans-serif; min-height:100vh; display:flex; align-items:center; justify-content:center; }
+      .wrap { max-width:500px; width:100%; padding:40px 20px 60px; text-align:center; }
+      .icon { font-size:74px; margin-bottom:12px; }
+      h1 { margin:0 0 6px; font-size:34px; color:var(--accent); letter-spacing:1px; }
+      .sub { color:var(--muted); font-size:15px; margin:0 0 38px; }
+      .links { display:flex; flex-direction:column; gap:12px; }
+      .link-card { background:rgba(18,18,30,.88); border:1px solid rgba(255,107,157,.22); border-radius:16px; padding:16px 20px; text-decoration:none; color:var(--text); font-size:15px; font-weight:800; transition:background .2s,border-color .2s,transform .2s; }
+      .link-card:hover { background:rgba(255,107,157,.12); border-color:rgba(255,107,157,.45); transform:translateY(-1px); }
+      .link-card .emoji { font-size:20px; margin-right:8px; }
+      .contact { margin-top:34px; color:var(--muted); font-size:13px; }
+      .contact a { color:var(--accent); text-decoration:none; }
+      .contact a:hover { text-decoration:underline; }
+    </style>
+  </head>
+  <body>
+    <div class="wrap">
+      <div class="icon">💬</div>
+      <h1>대박!</h1>
+      <p class="sub">K-pop, K-drama, and fan moment Korean practice</p>
+
+      <div class="links">
+        <a class="link-card" href="./privacy-policy.html"><span class="emoji">🔐</span>개인정보처리방침 / Privacy Policy</a>
+        <a class="link-card" href="./terms-of-service.html"><span class="emoji">📋</span>이용약관 / Terms of Service</a>
+      </div>
+
+      <div class="contact">
+        문의 · Contact: <a href="mailto:dreamy2g@gmail.com">dreamy2g@gmail.com</a>
+      </div>
+    </div>
+  </body>
+</html>
