@@ -3,7 +3,7 @@
   <head>
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
-    <title>두두의 동화나라 Privacy Policy / 개인정보처리방침</title>
+    <title>두두의 동화나라 Privacy Policy / 개인정보처리방침 / Kebijakan Privasi</title>
     <style>
       :root {
         --text: #f0f8e8;
@@ -92,7 +92,7 @@
       <div class="card">
         <div class="app-title">
           <span style="font-size:32px">🦉</span>
-          <h1>두두의 동화나라<br>개인정보처리방침 / Privacy Policy</h1>
+          <h1>두두의 동화나라<br>개인정보처리방침 / Privacy Policy / Kebijakan Privasi</h1>
         </div>
         <div class="updated">최종 업데이트 / Last updated: 2026년 5월</div>
 
@@ -100,13 +100,16 @@
           <h2>한국어</h2>
 
           <h3>1. 개요</h3>
-          <p>두두의 동화나라(이하 "앱")는 부모님 또는 보호자가 입력한 아이의 하루를 AI 동화로 만들어주는 서비스예요. 앱은 서비스 제공에 필요한 최소한의 정보만 처리하며, 일부 기능은 제3자 서비스(Firebase, OpenAI, Google AdMob)를 통해 동작해요.</p>
+          <p>두두의 동화나라(이하 "앱")는 부모님 또는 보호자가 입력한 아이의 하루를 AI 동화로 만들어주는 서비스예요. 앱은 서비스 제공에 필요한 최소한의 정보만 처리하며, 일부 기능은 제3자 서비스(Firebase, OpenAI, Google AdMob, RevenueCat 등)를 통해 동작해요.</p>
 
           <h3>2. 수집 또는 처리하는 정보</h3>
           <ul>
             <li>동화 생성 시 입력한 내용 — AI 동화 생성을 위해 OpenAI API로 전송돼요.</li>
-            <li>아이 이름, 생성된 동화, 앱 설정값 — 사용자 기기에 저장돼요.</li>
+            <li>아이 이름, 여러 아이 프로필, 생성된 동화, 앱 설정값 — 사용자 기기에 저장돼요.</li>
+            <li>구독 사용자 또는 유료 보관 권한이 있는 사용자의 생성 동화와 프로필 정보 — 동화 보관, 복원, 기기 변경 지원을 위해 서버에 저장될 수 있어요.</li>
             <li>기기 식별정보(deviceId) — 시작 보너스 지급 여부 확인, 크레딧 복구, 부정 사용 방지를 위해 사용돼요.</li>
+            <li>로그인 정보 — Google 로그인 등 계정 연동 시 사용자 식별자, 이메일 주소, 프로필 이름이 처리될 수 있어요.</li>
+            <li>구독 및 결제 상태 정보 — 프리미엄 구독 제공, 구매 복원, 구독 종료 후 보관 권한 확인을 위해 RevenueCat 및 앱 마켓 결제 정보를 처리해요. 앱은 전체 카드번호 등 직접 결제수단 정보를 저장하지 않아요.</li>
             <li>Firebase Cloud Functions 호출 정보 — 동화 생성 요청 처리, 시작 보너스 확인, 마지막 크레딧 저장 처리, 광고 보상 기록을 위해 사용돼요.</li>
             <li>크레딧 정보 — 사용자의 마지막 크레딧 상태를 복구하기 위해 서버에 저장될 수 있어요.</li>
             <li>광고 기능 동작을 위한 Google Mobile Ads SDK 관련 정보 — 광고 제공, 측정, 동의 및 광고 개인정보 설정 제공에 사용돼요.</li>
@@ -116,6 +119,8 @@
           <ul>
             <li>AI 동화 생성</li>
             <li>동화 앨범 저장 및 관리</li>
+            <li>구독자 동화 보관, 복원, 기기 변경 지원</li>
+            <li>프리미엄 구독 제공, 구매 복원, 구독 상태 확인</li>
             <li>앱 설정값 저장</li>
             <li>시작 보너스 지급 여부 확인</li>
             <li>크레딧 복구</li>
@@ -123,17 +128,19 @@
           </ul>
 
           <h3>4. 정보의 보관 방식</h3>
-          <p>아이 이름, 생성된 동화, 앱 설정값, 로컬 크레딧 상태는 사용자 기기에 저장돼요. 또한 시작 보너스 중복 방지와 마지막 크레딧 복구를 위해 기기 식별정보와 마지막 크레딧 값이 서버에 저장될 수 있어요. 앱을 삭제해도 서버에 저장된 마지막 크레딧은 유지될 수 있어요.</p>
+          <p>아이 이름, 생성된 동화, 앱 설정값, 로컬 크레딧 상태는 기본적으로 사용자 기기에 저장돼요. 구독 사용자 또는 유료 보관 권한이 있는 사용자는 동화 보관, 복원, 기기 변경 지원을 위해 생성 동화와 프로필 정보가 서버에 저장될 수 있어요. 또한 시작 보너스 중복 방지와 마지막 크레딧 복구를 위해 기기 식별정보와 마지막 크레딧 값이 서버에 저장될 수 있어요. 앱을 삭제해도 서버에 저장된 크레딧, 구독 상태, 보관 동화 정보는 유지될 수 있어요.</p>
 
           <h3>5. 제3자 서비스</h3>
           <ul>
-            <li><strong>Firebase (Google)</strong> — 서버 함수 호출, 마지막 크레딧 상태 저장/복구, 광고 보상 기록, 생성 제한 확인에 사용돼요.</li>
+            <li><strong>Firebase (Google)</strong> — 서버 함수 호출, 계정/기기 식별, 동화 보관, 마지막 크레딧 상태 저장/복구, 광고 보상 기록, 생성 제한 확인에 사용돼요.</li>
             <li><strong>OpenAI API</strong> — 동화 생성. 입력 내용이 OpenAI 서버로 전달돼요. <a href="https://openai.com/privacy" target="_blank">OpenAI 개인정보처리방침</a></li>
             <li><strong>Google AdMob</strong> — 광고 제공, 측정, 동의 및 광고 개인정보 설정 제공. <a href="https://policies.google.com/privacy" target="_blank">Google 개인정보처리방침</a></li>
+            <li><strong>RevenueCat</strong> — 구독 상태 확인, 구매 복원, 앱 마켓 결제 이벤트 처리에 사용돼요. <a href="https://www.revenuecat.com/privacy/" target="_blank">RevenueCat 개인정보처리방침</a></li>
+            <li><strong>Google Play / Apple App Store</strong> — 앱 내 구독 결제와 환불 처리를 담당해요.</li>
           </ul>
 
           <h3>6. 아동의 개인정보 보호</h3>
-          <p>두두의 동화나라는 부모님 또는 보호자가 아이를 위해 사용하는 앱이에요. 아이 이름과 생성된 동화는 사용자 기기에 저장되며, 동화 생성 입력 내용은 기능 수행을 위해 OpenAI에 전달될 수 있어요. 민감한 개인정보 입력은 권장하지 않아요.</p>
+          <p>두두의 동화나라는 부모님 또는 보호자가 아이를 위해 사용하는 앱이에요. 아이 이름과 생성된 동화는 사용자 기기 또는 구독자 보관 기능을 위한 서버에 저장될 수 있으며, 동화 생성 입력 내용은 기능 수행을 위해 OpenAI에 전달될 수 있어요. 아이의 주민등록번호, 주소, 학교, 연락처, 건강정보 등 민감한 개인정보 입력은 권장하지 않아요.</p>
 
           <h3>7. 문의</h3>
           <p>개인정보처리방침 관련 문의는 아래로 연락해주세요.</p>
@@ -144,13 +151,16 @@
           <h2>English</h2>
 
           <h3>1. Overview</h3>
-          <p>Dudu's Story Land (the "App") turns a child's daily moments entered by a parent or guardian into AI-generated stories. The App processes only the minimum information needed to provide the service, and some features rely on third-party services such as Firebase Cloud Functions, OpenAI, and Google AdMob.</p>
+          <p>Dudu's Story Land (the "App") turns a child's daily moments entered by a parent or guardian into AI-generated stories. The App processes only the information needed to provide the service, and some features rely on third-party services such as Firebase Cloud Functions, OpenAI, Google AdMob, and RevenueCat.</p>
 
           <h3>2. Information We Process</h3>
           <ul>
             <li>Story input text — sent to the OpenAI API to generate stories.</li>
-            <li>Child's name, generated stories, and app settings — stored on the user's device.</li>
+            <li>Child's name, multiple child profiles, generated stories, and app settings — stored on the user's device.</li>
+            <li>Generated stories and profile information for subscribers or users with paid storage entitlement — may be stored on our server to provide story storage, restore, and device-change support.</li>
             <li>Device identifier (deviceId) — used to determine initial bonus eligibility, restore credits, and prevent abuse.</li>
+            <li>Login information — when a user links a Google account or similar sign-in method, we may process account identifiers, email address, and profile name.</li>
+            <li>Subscription and purchase status — used to provide premium subscriptions, restore purchases, and confirm storage entitlement after a subscription ends. The App does not store full payment card numbers or direct payment method details.</li>
             <li>Firebase Cloud Functions request data — used to process story generation requests, check initial bonus eligibility, store/restore the last known credit balance, and record rewarded ad grants.</li>
             <li>Credit information — the last known credit balance may be stored on the server for restoration.</li>
             <li>Information related to Google Mobile Ads SDK — used for ad delivery, measurement, consent, and ad privacy options.</li>
@@ -160,6 +170,8 @@
           <ul>
             <li>AI story generation</li>
             <li>Saving and managing story history</li>
+            <li>Providing subscriber story storage, restore, and device-change support</li>
+            <li>Providing premium subscriptions, purchase restoration, and subscription status checks</li>
             <li>Saving app settings</li>
             <li>Checking initial bonus eligibility</li>
             <li>Restoring credit balance</li>
@@ -167,20 +179,73 @@
           </ul>
 
           <h3>4. Data Storage</h3>
-          <p>The child's name, generated stories, app settings, and local credit state are stored on the user's device. In addition, the device identifier and last known credit value may be stored on the server to prevent duplicate initial bonuses and restore credits later. Even if the app is deleted, the last stored credit balance on the server may remain.</p>
+          <p>The child's name, generated stories, app settings, and local credit state are primarily stored on the user's device. For subscribers or users with paid storage entitlement, generated stories and profile information may also be stored on our server to support story storage, restoration, and device changes. In addition, the device identifier and last known credit value may be stored on the server to prevent duplicate initial bonuses and restore credits later. Even if the app is deleted, server-stored credits, subscription status, and stored story information may remain.</p>
 
           <h3>5. Third-Party Services</h3>
           <ul>
-            <li><strong>Firebase (Google)</strong> — Cloud Functions calls, storing/restoring the last known credit balance, rewarded ad grant records, and generation limit checks.</li>
+            <li><strong>Firebase (Google)</strong> — Cloud Functions calls, account/device identification, story storage, storing/restoring the last known credit balance, rewarded ad grant records, and generation limit checks.</li>
             <li><strong>OpenAI API</strong> — story generation. Story input may be sent to OpenAI servers. <a href="https://openai.com/privacy" target="_blank">OpenAI Privacy Policy</a></li>
             <li><strong>Google AdMob</strong> — ad delivery, measurement, consent, and ad privacy options. <a href="https://policies.google.com/privacy" target="_blank">Google Privacy Policy</a></li>
+            <li><strong>RevenueCat</strong> — subscription status checks, purchase restoration, and app store purchase event processing. <a href="https://www.revenuecat.com/privacy/" target="_blank">RevenueCat Privacy Policy</a></li>
+            <li><strong>Google Play / Apple App Store</strong> — in-app subscription payments and refund processing.</li>
           </ul>
 
           <h3>6. Children's Privacy</h3>
-          <p>Dudu's Story Land is intended for parents or guardians creating stories for children. The child's name and generated stories are stored locally, and story input may be sent to OpenAI to provide the generation feature. Please avoid entering sensitive personal data.</p>
+          <p>Dudu's Story Land is intended for parents or guardians creating stories for children. The child's name and generated stories may be stored locally or on our server for subscriber storage features, and story input may be sent to OpenAI to provide the generation feature. Please avoid entering sensitive personal data such as government IDs, home addresses, school details, contact information, or health information.</p>
 
           <h3>7. Contact</h3>
           <p>For privacy-related questions, please contact:</p>
+          <p><a href="mailto:dudulearnplay@gmail.com">dudulearnplay@gmail.com</a></p>
+        </section>
+
+        <section class="lang" id="id">
+          <h2>Bahasa Indonesia</h2>
+
+          <h3>1. Ikhtisar</h3>
+          <p>Dudu's Story Land ("Aplikasi") mengubah momen harian anak yang dimasukkan oleh orang tua atau wali menjadi cerita yang dibuat dengan AI. Aplikasi memproses informasi yang diperlukan untuk menyediakan layanan, dan beberapa fitur menggunakan layanan pihak ketiga seperti Firebase Cloud Functions, OpenAI, Google AdMob, dan RevenueCat.</p>
+
+          <h3>2. Informasi yang Kami Proses</h3>
+          <ul>
+            <li>Teks masukan cerita — dikirim ke OpenAI API untuk membuat cerita.</li>
+            <li>Nama anak, beberapa profil anak, cerita yang dibuat, dan pengaturan aplikasi — disimpan di perangkat pengguna.</li>
+            <li>Cerita yang dibuat dan informasi profil untuk pelanggan atau pengguna dengan hak penyimpanan berbayar — dapat disimpan di server kami untuk fitur penyimpanan cerita, pemulihan, dan pergantian perangkat.</li>
+            <li>Pengidentifikasi perangkat (deviceId) — digunakan untuk memeriksa bonus awal, memulihkan kredit, dan mencegah penyalahgunaan.</li>
+            <li>Informasi login — jika pengguna menautkan akun Google atau metode login serupa, kami dapat memproses pengidentifikasi akun, alamat email, dan nama profil.</li>
+            <li>Status langganan dan pembelian — digunakan untuk menyediakan langganan premium, memulihkan pembelian, dan memastikan hak penyimpanan setelah langganan berakhir. Aplikasi tidak menyimpan nomor kartu pembayaran lengkap atau detail metode pembayaran langsung.</li>
+            <li>Data permintaan Firebase Cloud Functions — digunakan untuk memproses pembuatan cerita, memeriksa bonus awal, menyimpan/memulihkan saldo kredit terakhir, dan mencatat hadiah iklan.</li>
+            <li>Informasi kredit — saldo kredit terakhir dapat disimpan di server untuk pemulihan.</li>
+            <li>Informasi terkait Google Mobile Ads SDK — digunakan untuk penayangan iklan, pengukuran, persetujuan, dan opsi privasi iklan.</li>
+          </ul>
+
+          <h3>3. Tujuan Penggunaan</h3>
+          <ul>
+            <li>Pembuatan cerita dengan AI</li>
+            <li>Menyimpan dan mengelola riwayat cerita</li>
+            <li>Menyediakan penyimpanan cerita pelanggan, pemulihan, dan dukungan pergantian perangkat</li>
+            <li>Menyediakan langganan premium, pemulihan pembelian, dan pemeriksaan status langganan</li>
+            <li>Menyimpan pengaturan aplikasi</li>
+            <li>Memeriksa kelayakan bonus awal</li>
+            <li>Memulihkan saldo kredit</li>
+            <li>Menyediakan fitur iklan</li>
+          </ul>
+
+          <h3>4. Penyimpanan Data</h3>
+          <p>Nama anak, cerita yang dibuat, pengaturan aplikasi, dan status kredit lokal terutama disimpan di perangkat pengguna. Untuk pelanggan atau pengguna dengan hak penyimpanan berbayar, cerita yang dibuat dan informasi profil juga dapat disimpan di server kami untuk mendukung penyimpanan cerita, pemulihan, dan pergantian perangkat. Selain itu, pengidentifikasi perangkat dan saldo kredit terakhir dapat disimpan di server untuk mencegah bonus awal ganda dan memulihkan kredit. Meskipun aplikasi dihapus, kredit, status langganan, dan informasi cerita yang disimpan di server dapat tetap tersimpan.</p>
+
+          <h3>5. Layanan Pihak Ketiga</h3>
+          <ul>
+            <li><strong>Firebase (Google)</strong> — panggilan Cloud Functions, identifikasi akun/perangkat, penyimpanan cerita, penyimpanan/pemulihan saldo kredit terakhir, catatan hadiah iklan, dan pemeriksaan batas pembuatan.</li>
+            <li><strong>OpenAI API</strong> — pembuatan cerita. Masukan cerita dapat dikirim ke server OpenAI. <a href="https://openai.com/privacy" target="_blank">Kebijakan Privasi OpenAI</a></li>
+            <li><strong>Google AdMob</strong> — penayangan iklan, pengukuran, persetujuan, dan opsi privasi iklan. <a href="https://policies.google.com/privacy" target="_blank">Kebijakan Privasi Google</a></li>
+            <li><strong>RevenueCat</strong> — pemeriksaan status langganan, pemulihan pembelian, dan pemrosesan peristiwa pembelian app store. <a href="https://www.revenuecat.com/privacy/" target="_blank">Kebijakan Privasi RevenueCat</a></li>
+            <li><strong>Google Play / Apple App Store</strong> — pembayaran langganan dalam aplikasi dan pemrosesan pengembalian dana.</li>
+          </ul>
+
+          <h3>6. Privasi Anak</h3>
+          <p>Dudu's Story Land ditujukan untuk orang tua atau wali yang membuat cerita untuk anak. Nama anak dan cerita yang dibuat dapat disimpan secara lokal atau di server kami untuk fitur penyimpanan pelanggan, dan masukan cerita dapat dikirim ke OpenAI untuk menyediakan fitur pembuatan cerita. Hindari memasukkan data pribadi sensitif seperti nomor identitas, alamat rumah, detail sekolah, informasi kontak, atau informasi kesehatan.</p>
+
+          <h3>7. Kontak</h3>
+          <p>Untuk pertanyaan terkait privasi, silakan hubungi:</p>
           <p><a href="mailto:dudulearnplay@gmail.com">dudulearnplay@gmail.com</a></p>
         </section>
       </div>

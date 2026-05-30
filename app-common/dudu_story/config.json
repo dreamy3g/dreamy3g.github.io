@@ -5,8 +5,6 @@
   "storeUrlIos": "",
   "notices": [],
   "creditConfig": {
-    "maxCredits": 99,
-    "maxRewardCountPerDay": 10,
-    "rewardCooldownSeconds": 60
+
   }
 }
