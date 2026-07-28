@@ -35,97 +35,113 @@
           <span style="font-size:32px">💬</span>
           <h1>대박!<br>개인정보처리방침 / Privacy Policy</h1>
         </div>
-        <div class="updated">최종 업데이트 / Last updated: 2026년 5월 25일</div>
+        <div class="updated">최종 업데이트 / Last updated: 2026년 7월 28일</div>
 
         <section class="lang" id="ko">
           <h2>한국어</h2>
 
-          <h3>1. 개요</h3>
-          <p>대박!(이하 "앱")은 K-pop, K-drama, 팬 활동 상황을 바탕으로 한국어 문법과 표현을 학습할 수 있도록 돕는 앱입니다. 앱은 서비스 제공에 필요한 최소한의 정보를 처리하며, 학습 진행 상태와 설정은 기본적으로 사용자 기기에 저장됩니다.</p>
+          <h3>1. 개요 및 개인정보처리자</h3>
+          <p>Daebak Korean(대박!, 이하 "앱") 운영팀은 K-pop, K-drama 및 팬 활동 상황을 바탕으로 한국어 문법과 표현을 학습할 수 있는 서비스를 제공합니다. 계정 가입은 필요하지 않으며, 학습 진행 상태와 설정은 주로 사용자 기기에 저장됩니다.</p>
 
           <h3>2. 처리하는 정보</h3>
           <ul>
-            <li><strong>학습 진행 정보</strong>: 문법 카드 열람 여부, 연습 진행도, 정답/오답 시도, 완료 날짜, 리뷰 카드, 아카이브 날짜 등이 사용자 기기에 저장됩니다.</li>
-            <li><strong>앱 설정</strong>: 온보딩 완료 여부, 로마자 표시 설정, 캐시된 학습 콘텐츠, 백업/복구 데이터가 사용자 기기에 저장됩니다.</li>
-            <li><strong>콘텐츠 다운로드 정보</strong>: 앱은 Firebase Storage에서 날짜별 학습 콘텐츠를 다운로드하고 사용자 기기에 캐시합니다.</li>
-            <li><strong>콘텐츠 신고 정보</strong>: 사용자가 콘텐츠 신고를 보내는 경우, 신고 사유, 콘텐츠 날짜, 문법 항목 등 신고 처리에 필요한 정보가 Firebase Cloud Functions로 전송될 수 있습니다.</li>
-            <li><strong>앱 사용 분석 정보</strong>: Firebase Analytics를 통해 화면 조회, 탭 선택, 문법 카드 열람, 연습 시작/완료, 리뷰 공개 등의 이벤트가 수집될 수 있습니다. 사용자가 입력한 민감한 본문을 분석 이벤트로 보내지 않도록 설계합니다.</li>
-            <li><strong>기기 식별 관련 정보</strong>: 일부 공통 앱 서비스에서는 기기 식별자가 사용될 수 있으나, 현재 앱의 핵심 학습 기능은 로그인 없이 동작합니다.</li>
+            <li><strong>기기 내 학습 및 설정 정보</strong>: 문법 카드 열람, 연습 진행도, 정답·오답 시도, 완료 날짜, 리뷰 카드, 아카이브, 온보딩 상태, 로마자 표시 설정, 캐시된 콘텐츠 및 사용자가 만든 내보내기·가져오기 백업 파일입니다.</li>
+            <li><strong>앱 식별 정보</strong>: 앱이 생성한 기기 ID, 사용자 ID, 구매 코드, 앱 버전·빌드, 언어·지역 설정 및 생성·최근 접속 시각입니다. 로그인 없이 공통 서비스 제공, 데이터 연결, 고객 지원 및 악용 방지에 사용됩니다.</li>
+            <li><strong>사용 분석 정보</strong>: Firebase Analytics가 앱 인스턴스 식별자, 기기 모델, 운영체제, 대략적 지역, 화면 조회, 탭 선택, 카드 열람, 연습 시작·완료, 리뷰 공개 등 앱 상호작용을 처리할 수 있습니다. 광고 ID는 수집하도록 구성하지 않았으며 제3자 광고를 표시하지 않습니다.</li>
+            <li><strong>콘텐츠 신고</strong>: 사용자가 선택하여 신고할 경우 신고 사유, 콘텐츠 날짜, 문법 항목, 관련 문장·선택지, 선택적으로 입력한 메모, 사용자 ID, 기기 ID 및 지원 코드가 전송됩니다.</li>
+            <li><strong>구매 정보</strong>: 유료 기능을 구매하거나 복원할 때 상품 ID, 구매 상태와 시각, 스토어 거래·영수증 또는 구매 토큰, RevenueCat 익명 고객 ID 및 권한 상태가 처리될 수 있습니다. 운영자는 사용자의 전체 결제카드 번호나 은행계좌 정보를 직접 수집하지 않습니다.</li>
+            <li><strong>기술 정보</strong>: Firebase 및 RevenueCat은 서비스 제공과 보안을 위해 IP 주소, 요청 시각, 앱·기기·네트워크 관련 기술 정보를 처리할 수 있습니다.</li>
           </ul>
 
-          <h3>3. 이용 목적</h3>
+          <h3>3. 처리 목적</h3>
           <ul>
-            <li>한국어 학습 콘텐츠 제공 및 캐시</li>
-            <li>학습 진행 상태, 리뷰, 아카이브, 앱 설정 유지</li>
-            <li>콘텐츠 오류 신고 접수 및 품질 개선</li>
-            <li>앱 안정성, 기능 사용 현황, 서비스 품질 개선</li>
-            <li>백업/복구 기능 제공</li>
+            <li>한국어 학습 콘텐츠 제공, 캐시 및 로컬 학습 진행 유지</li>
+            <li>유료 기능 구매 확인, 권한 부여 및 구매 복원</li>
+            <li>콘텐츠 오류 신고 접수, 고객 지원, 보안 및 악용 방지</li>
+            <li>앱 안정성, 기능 사용 현황 및 서비스 품질 개선</li>
+            <li>사용자가 요청한 백업 내보내기·가져오기 기능 제공</li>
           </ul>
 
-          <h3>4. 보관 및 삭제</h3>
-          <p>학습 진행 정보, 리뷰 카드, 아카이브, 캐시된 콘텐츠, 로마자 설정 등 대부분의 데이터는 사용자 기기에 저장됩니다. 사용자는 앱 삭제 또는 앱 내 데이터 가져오기/내보내기 기능을 통해 로컬 데이터를 관리할 수 있습니다.</p>
-          <p class="note">앱을 삭제하면 기기에 저장된 학습 진행, 리뷰, 아카이브, 설정, 캐시 데이터가 사라질 수 있습니다.</p>
-
-          <h3>5. 제3자 서비스</h3>
+          <h3>4. 보관, 파기 및 이용자 권리</h3>
           <ul>
-            <li><a href="https://firebase.google.com/support/privacy" target="_blank">Firebase (Google)</a> — 앱 초기화, Analytics, Storage, Cloud Functions 등 앱 인프라 제공</li>
-            <li><a href="https://policies.google.com/privacy" target="_blank">Google 개인정보처리방침</a> — Firebase 및 Google 서비스의 개인정보 처리 기준</li>
+            <li><strong>기기 내 정보</strong>: 앱을 삭제하거나 기기의 앱 데이터를 삭제할 때까지 보관됩니다. 백업 파일은 사용자가 선택한 위치에서 직접 관리합니다.</li>
+            <li><strong>앱 식별 정보와 콘텐츠 신고</strong>: 서비스 제공과 신고 처리에 필요한 동안 보관하며, 삭제 요청이 있거나 목적이 달성되어 더 이상 필요하지 않으면 삭제합니다. 다만 보안, 분쟁 대응 또는 법령상 보존 의무가 있는 정보는 필요한 범위와 기간 동안 별도로 보관할 수 있습니다.</li>
+            <li><strong>구매 기록</strong>: Apple, Google 및 RevenueCat이 구매 확인·복원, 사기 방지 및 법적 의무를 위해 각자의 정책에 따라 보관합니다.</li>
+          </ul>
+          <p>사용자는 아래 이메일로 서버에 저장된 정보의 열람, 정정, 삭제 또는 처리 관련 문의를 요청할 수 있습니다. 요청자의 지원 코드 등 필요한 정보를 확인한 후 합리적인 기간 내 처리합니다. 앱 삭제만으로 스토어 구매 기록이나 서버 기록이 모두 자동 삭제되는 것은 아닙니다.</p>
+
+          <h3>5. 외부 서비스 및 국외 처리</h3>
+          <ul>
+            <li><strong><a href="https://firebase.google.com/support/privacy" target="_blank">Google Firebase</a></strong> — Analytics, Storage, Cloud Functions 및 앱 인프라. 앱 이용 중 암호화된 네트워크를 통해 미국 등 Google이 서비스를 운영하는 국가에서 처리될 수 있으며, 보관은 서비스 설정과 <a href="https://policies.google.com/privacy" target="_blank">Google 개인정보처리방침</a>을 따릅니다.</li>
+            <li><strong><a href="https://www.revenuecat.com/privacy/" target="_blank">RevenueCat, Inc.</a></strong> — 구매 검증, 권한 확인 및 구매 복원. 앱 시작, 구매 또는 복원 시 암호화된 네트워크를 통해 미국 등 RevenueCat이 서비스를 운영하는 국가에서 처리될 수 있으며, 고객 기록이 서비스 제공에 필요한 동안 또는 관련 법령·정책에 따른 기간 동안 보관될 수 있습니다.</li>
+            <li><strong>Apple App Store / Google Play</strong> — 결제 및 스토어 계정 기반 구매 기록을 각 스토어가 독립적으로 처리합니다. <a href="https://www.apple.com/legal/privacy/" target="_blank">Apple 개인정보처리방침</a> 및 <a href="https://policies.google.com/privacy" target="_blank">Google 개인정보처리방침</a>이 적용됩니다.</li>
           </ul>
 
-          <h3>6. 아동 개인정보</h3>
-          <p>대박!은 일반 한국어 학습자를 위한 앱이며, 만 14세 미만 아동을 대상으로 하지 않습니다. 만 14세 미만 사용자는 보호자의 동의와 지도하에 이용해야 합니다.</p>
+          <h3>6. 보안</h3>
+          <p>운영자는 전송 구간 암호화, 접근 제한 및 서비스 제공에 필요한 정보의 최소화 등 합리적인 보호조치를 적용합니다. 다만 어떠한 저장 또는 전송 방식도 절대적인 안전을 보장할 수는 없습니다.</p>
 
-          <h3>7. 개인정보처리방침 변경</h3>
-          <p>앱 기능, 법령, 운영 정책 변경에 따라 본 방침이 수정될 수 있습니다. 변경 시 본 페이지의 최종 업데이트 일자를 갱신합니다.</p>
+          <h3>7. 아동 개인정보</h3>
+          <p>앱은 만 14세 미만 아동을 대상으로 하지 않습니다. 만 14세 미만 아동의 개인정보가 적법한 보호자 동의 없이 처리된 사실을 알게 된 경우 아래 연락처로 알려주시면 확인 후 삭제 등 필요한 조치를 합니다.</p>
 
-          <h3>8. 문의</h3>
-          <p>개인정보 처리에 관한 문의는 아래 이메일로 연락해 주세요.<br />
+          <h3>8. 개인정보처리방침 변경</h3>
+          <p>앱 기능, 법령 또는 운영 정책이 변경되면 본 방침을 수정할 수 있습니다. 중요한 변경은 앱 또는 본 페이지를 통해 알리고 최종 업데이트 일자를 갱신합니다.</p>
+
+          <h3>9. 문의 및 개인정보 담당자</h3>
+          <p>개인정보 문의: Daebak Korean 운영팀<br />
           📧 <a href="mailto:daebak.playmi@gmail.com">daebak.playmi@gmail.com</a></p>
         </section>
 
         <section class="lang" id="en">
           <h2>English</h2>
 
-          <h3>1. Overview</h3>
-          <p>DAEBAK! (the "App") helps users practice Korean grammar and expressions through K-pop, K-drama, and fan moment scenarios. The App processes only the information needed to provide the service. Learning progress and settings are stored primarily on the user's device.</p>
+          <h3>1. Overview and Data Controller</h3>
+          <p>The Daebak Korean (DAEBAK!, the "App") team provides a service that helps users learn Korean grammar and expressions through K-pop, K-drama, and fan scenarios. No account registration is required. Learning progress and settings are stored mainly on the user's device.</p>
 
           <h3>2. Information We Process</h3>
           <ul>
-            <li><strong>Learning progress</strong>: Grammar card views, practice progress, correct/incorrect attempts, completed dates, review cards, and archive dates are stored on the user's device.</li>
-            <li><strong>App settings</strong>: Onboarding status, romaja display preference, cached learning content, and backup/import data are stored on the user's device.</li>
-            <li><strong>Content downloads</strong>: The App downloads date-based learning content from Firebase Storage and caches it on the user's device.</li>
-            <li><strong>Content reports</strong>: If the user submits a content report, the selected reason, content date, grammar item, and related report data may be sent to Firebase Cloud Functions.</li>
-            <li><strong>Analytics data</strong>: Firebase Analytics may collect events such as screen views, tab selections, grammar card opens, practice starts/completions, and review reveals to improve the App. We design analytics events not to include sensitive user-entered content.</li>
-            <li><strong>Device identifier-related information</strong>: Some shared app services may use a device identifier, although the core learning features currently work without account login.</li>
+            <li><strong>On-device learning and settings</strong>: Grammar card views, practice progress, correct and incorrect attempts, completion dates, review cards, archives, onboarding status, romaja preference, cached content, and backup files the user exports or imports.</li>
+            <li><strong>App identifiers</strong>: An app-generated device ID, user ID, purchase code, app version and build, locale, and creation or last-access timestamps. These support shared services, data association, support, security, and abuse prevention without account login.</li>
+            <li><strong>Analytics</strong>: Firebase Analytics may process an app instance identifier, device model, operating system, approximate region, screen views, tab selections, card opens, practice starts and completions, review reveals, and similar interactions. The App is not configured to collect the Android Advertising ID and does not display third-party advertising.</li>
+            <li><strong>Content reports</strong>: When a user chooses to submit a report, we receive the selected reason, content date, grammar item, related sentences or choices, an optional free-text note, user ID, device ID, and support code.</li>
+            <li><strong>Purchase information</strong>: When a user purchases or restores paid features, the product ID, purchase status and time, store transaction, receipt or purchase token, RevenueCat anonymous customer ID, and entitlement status may be processed. We do not directly collect full payment-card or bank-account details.</li>
+            <li><strong>Technical information</strong>: Firebase and RevenueCat may process IP address, request time, and app, device, or network information for service delivery and security.</li>
           </ul>
 
-          <h3>3. Purposes of Use</h3>
+          <h3>3. Purposes</h3>
           <ul>
-            <li>Providing and caching Korean learning content</li>
-            <li>Maintaining learning progress, review, archive, and app settings</li>
-            <li>Receiving content error reports and improving content quality</li>
-            <li>Improving app stability, feature usage, and service quality</li>
-            <li>Providing export/import backup features</li>
+            <li>Provide and cache learning content and maintain local progress</li>
+            <li>Validate purchases, grant paid access, and restore purchases</li>
+            <li>Handle content reports and support requests and prevent abuse</li>
+            <li>Measure reliability and feature usage and improve service quality</li>
+            <li>Provide user-requested backup export and import</li>
           </ul>
 
-          <h3>4. Retention and Deletion</h3>
-          <p>Most data, including learning progress, review cards, archive entries, cached content, and romaja settings, is stored on the user's device. Users can manage local data by deleting the App or using the in-app export/import features.</p>
-          <p class="note">If the App is deleted, locally stored progress, review cards, archive data, settings, and cached content may be lost.</p>
-
-          <h3>5. Third-Party Services</h3>
+          <h3>4. Retention, Deletion, and Your Rights</h3>
           <ul>
-            <li><a href="https://firebase.google.com/support/privacy" target="_blank">Firebase (Google)</a> — App initialization, Analytics, Storage, Cloud Functions, and app infrastructure</li>
-            <li><a href="https://policies.google.com/privacy" target="_blank">Google Privacy Policy</a> — Privacy practices for Firebase and Google services</li>
+            <li><strong>On-device information</strong> remains until the App or its data is deleted. Users control exported backup files at the location they choose.</li>
+            <li><strong>App identifiers and content reports</strong> are retained while needed to provide the service or handle reports. We delete them when requested or when no longer needed, except for limited records required for security, disputes, abuse prevention, or law.</li>
+            <li><strong>Purchase records</strong> are retained by Apple, Google, and RevenueCat under their policies for purchase validation, restoration, fraud prevention, and legal obligations.</li>
+          </ul>
+          <p>Users may contact us to request access, correction, or deletion of server-side information or to ask questions about processing. We may request a support code or similar information to verify and locate the relevant record. Deleting the App does not automatically delete store purchase records or all server-side records.</p>
+
+          <h3>5. Service Providers and International Processing</h3>
+          <ul>
+            <li><strong><a href="https://firebase.google.com/support/privacy" target="_blank">Google Firebase</a></strong> — Analytics, Storage, Cloud Functions, and app infrastructure. Data may be transmitted over encrypted connections during App use and processed in the United States and other countries where Google operates. Retention follows service configuration and the <a href="https://policies.google.com/privacy" target="_blank">Google Privacy Policy</a>.</li>
+            <li><strong><a href="https://www.revenuecat.com/privacy/" target="_blank">RevenueCat, Inc.</a></strong> — Purchase validation, entitlement status, and restoration. Data may be transmitted over encrypted connections when the App starts or a purchase or restoration occurs and processed in the United States and other countries where RevenueCat operates. Customer records may be kept while needed to provide the service or as required by applicable law and policy.</li>
+            <li><strong>Apple App Store / Google Play</strong> — Each store independently processes payment and store-account purchase records under the <a href="https://www.apple.com/legal/privacy/" target="_blank">Apple Privacy Policy</a> or <a href="https://policies.google.com/privacy" target="_blank">Google Privacy Policy</a>.</li>
           </ul>
 
-          <h3>6. Children's Privacy</h3>
-          <p>DAEBAK! is a Korean learning app for general users and is not directed to children under 14. Children under 14 should use the App only with consent and guidance from a parent or guardian.</p>
+          <h3>6. Security</h3>
+          <p>We apply reasonable safeguards such as encryption in transit, access restrictions, and data minimization. No storage or transmission method can guarantee absolute security.</p>
 
-          <h3>7. Changes to This Policy</h3>
-          <p>We may update this Policy when app features, laws, or operational policies change. The latest update date will be shown on this page.</p>
+          <h3>7. Children's Privacy</h3>
+          <p>The App is not directed to children under 14. If we learn that information from a child under 14 was processed without valid parental consent, please contact us and we will investigate and take appropriate action, including deletion where required.</p>
 
-          <h3>8. Contact</h3>
-          <p>For privacy inquiries, please contact us at:<br />
+          <h3>8. Changes to This Policy</h3>
+          <p>We may update this Policy when the App, law, or operational practices change. We will update the date above and provide notice in the App or on this page for material changes.</p>
+
+          <h3>9. Contact</h3>
+          <p>Privacy contact: Daebak Korean team<br />
           📧 <a href="mailto:daebak.playmi@gmail.com">daebak.playmi@gmail.com</a></p>
         </section>
       </div>
