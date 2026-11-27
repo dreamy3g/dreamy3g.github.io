@@ -1,0 +1,38 @@
+:root {
+  color-scheme: light dark;
+  font-family: system-ui, -apple-system, sans-serif;
+  line-height: 1.65;
+}
+
+body {
+  max-width: 42rem;
+  margin: 0 auto;
+  padding: 2rem 1.25rem 3rem;
+  overflow-wrap: anywhere;
+}
+
+header {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: baseline;
+  justify-content: space-between;
+  gap: 0.5rem 1.5rem;
+}
+
+nav a + a {
+  margin-inline-start: 1rem;
+}
+
+h1, h2, h3 {
+  line-height: 1.35;
+}
+
+article + article {
+  margin-block-start: 3rem;
+  padding-block-start: 1.5rem;
+  border-block-start: 1px solid GrayText;
+}
+
+article {
+  scroll-margin-top: 1rem;
+}
